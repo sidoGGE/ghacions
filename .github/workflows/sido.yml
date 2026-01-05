@@ -13,5 +13,10 @@ jobs:
     steps:
       - name: Print welcom sidoooo
         run: echo "welcom sido how are you"
+      - name: checkout repo 
+        uses:  actions/checkout@v6.0.1 # call this from the serch panal in the right  sido
+
+      - name: list repo files 
+        run: ls -la
     
   
