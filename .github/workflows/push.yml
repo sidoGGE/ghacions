@@ -6,7 +6,16 @@ on:
     push:
         branches:
             - main
-
+            - "release/**"
+        paths:
+            - 'scripts/**'
+    
+    pull_request:
+        branches:
+            - main
+            - "release/**"
+        #paths:
+        #    - 'scripts/**'
 jobs:
     job-1:
       runs-on: ubuntu-latest 
